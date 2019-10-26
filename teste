@@ -1,0 +1,12 @@
+#!/bin/bash
+cd esqueleto
+make > ../logcompilacao.txt
+./pitao -sentrada.txt -l -v -p > ../logentrada.txt
+./pitao -steste1.txt -l -v -p > ../logteste1.txt
+./pitao -steste1.txt -l -v -p > ../logteste1.txt
+cd ..
+cd executaveis
+./pitao-linux -sentrada.txt -l -v -p > ../log2entrada.txt
+./pitao-linux -steste1.txt -l -v -p > ../log2teste1.txt
+./pitao-linux -steste2.txt -l -v -p > ../log2teste2.txt
+cd ..

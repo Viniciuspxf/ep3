@@ -1,0 +1,10 @@
+Coisas que faltam ver:
+
+free em função itens para valores
+>> na saída stderr
+erros que acontecem no make e número de casas da saída da pilha
+resto da divisão não está funcionando
+
+ou não está funcionando (ver operadores lógicos) (certo)
+resultado de operações lógicas para valores float (certo)
+mudança de categoria nas funções itens para valores e objetos.c (certo)

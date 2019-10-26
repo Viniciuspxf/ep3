@@ -1,0 +1,927 @@
+MAC0121 2019 - EP3
+Pitao (Oct  9 2019, 13:01:53)
+[GCC 6.3.0 20170516] on linux
+Linha 0: # Agora vamos fazer uns testes misturando os operadores
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 1: # E possivel que os resultados do excutavel sejam diferentes
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 2: # dos do seu programa. Por exemplo, as vezes o executavel 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 3: # diz que o resultado de uma expressao e' True em vez de 1.0 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 4: # que e' False em vez de 0.0
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 5: 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 6: 2 2.5 + 3 * 6.2 / 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "2.5"  (string representando float)
+  "+"  (operador aritmetico adicao)
+  "3"  (string representando int)
+  "*"  (operador aritmetico multiplicacao)
+  "6.2"  (string representando float)
+  "/"  (operador aritmetico divisao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  2.500000  (valor float)
+  prec=6  (operador aritmetico adicao)
+  3  (valor int)
+  prec=7  (operador aritmetico multiplicacao)
+  6.200000  (valor float)
+  prec=7  (operador aritmetico divisao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2.5
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  4.5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  4.5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  13.5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  6.2
+  13.5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2.17741935483871
+
+2.17741935483871
+
+Linha 7: 2 3 / 5.0 12 * + 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "3"  (string representando int)
+  "/"  (operador aritmetico divisao)
+  "5.0"  (string representando float)
+  "12"  (string representando int)
+  "*"  (operador aritmetico multiplicacao)
+  "+"  (operador aritmetico adicao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  3  (valor int)
+  prec=7  (operador aritmetico divisao)
+  5.000000  (valor float)
+  12  (valor int)
+  prec=7  (operador aritmetico multiplicacao)
+  prec=6  (operador aritmetico adicao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0.6666666666666666
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5.0
+  0.6666666666666666
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  12
+  5.0
+  0.6666666666666666
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  60.0
+  0.6666666666666666
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  60.66666666666666
+
+60.66666666666666
+
+Linha 8: 2 2 3 ** **
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "2"  (string representando int)
+  "3"  (string representando int)
+  "**"  (operador aritmetico exponenciacao)
+  "**"  (operador aritmetico exponenciacao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  2  (valor int)
+  3  (valor int)
+  prec=8  (operador aritmetico exponenciacao)
+  prec=8  (operador aritmetico exponenciacao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  2
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  8
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  256
+
+256
+
+Linha 9: 2 2 ** 3 **
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "2"  (string representando int)
+  "**"  (operador aritmetico exponenciacao)
+  "3"  (string representando int)
+  "**"  (operador aritmetico exponenciacao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  2  (valor int)
+  prec=8  (operador aritmetico exponenciacao)
+  3  (valor int)
+  prec=8  (operador aritmetico exponenciacao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  4
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  4
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  64
+
+64
+
+Linha 10: 6.4 .8 /
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "6.4"  (string representando float)
+  ".8"  (string representando float)
+  "/"  (operador aritmetico divisao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  6.400000  (valor float)
+  0.800000  (valor float)
+  prec=7  (operador aritmetico divisao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  6.4
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0.8
+  6.4
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  8.0
+
+8.0
+
+Linha 11: 1 2 + 3.1 not and
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "1"  (string representando int)
+  "2"  (string representando int)
+  "+"  (operador aritmetico adicao)
+  "3.1"  (string representando float)
+  "not"  (operador logico negacao)
+  "and"  (operador logico e)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  1  (valor int)
+  2  (valor int)
+  prec=6  (operador aritmetico adicao)
+  3.100000  (valor float)
+  prec=8  (operador logico negacao)
+  prec=3  (operador logico e)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3.1
+  3
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+  3
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+False
+
+Linha 12: 4 3 >= 2 and 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "4"  (string representando int)
+  "3"  (string representando int)
+  ">="  (operador relacional maior ou igual)
+  "2"  (string representando int)
+  "and"  (operador logico e)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  4  (valor int)
+  3  (valor int)
+  prec=5  (operador relacional maior ou igual)
+  2  (valor int)
+  prec=3  (operador logico e)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  4
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  4
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  True
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  True
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+2
+
+Linha 13: 25.6 4.2 3.1 * - 3 %
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "25.6"  (string representando float)
+  "4.2"  (string representando float)
+  "3.1"  (string representando float)
+  "*"  (operador aritmetico multiplicacao)
+  "-"  (operador aritmetico subtracao)
+  "3"  (string representando int)
+  "%"  (operador aritmetico resto de divisao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  25.600000  (valor float)
+  4.200000  (valor float)
+  3.100000  (valor float)
+  prec=7  (operador aritmetico multiplicacao)
+  prec=6  (operador aritmetico subtracao)
+  3  (valor int)
+  prec=7  (operador aritmetico resto de divisao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  25.6
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  4.2
+  25.6
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3.1
+  4.2
+  25.6
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  13.02
+  25.6
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  12.58
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  12.58
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0.5800000000000001
+
+0.5800000000000001
+
+Linha 14: 12 4.3 2.1 / - 3 * 15 - 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "12"  (string representando int)
+  "4.3"  (string representando float)
+  "2.1"  (string representando float)
+  "/"  (operador aritmetico divisao)
+  "-"  (operador aritmetico subtracao)
+  "3"  (string representando int)
+  "*"  (operador aritmetico multiplicacao)
+  "15"  (string representando int)
+  "-"  (operador aritmetico subtracao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  12  (valor int)
+  4.300000  (valor float)
+  2.100000  (valor float)
+  prec=7  (operador aritmetico divisao)
+  prec=6  (operador aritmetico subtracao)
+  3  (valor int)
+  prec=7  (operador aritmetico multiplicacao)
+  15  (valor int)
+  prec=6  (operador aritmetico subtracao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  12
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  4.3
+  12
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2.1
+  4.3
+  12
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2.047619047619047
+  12
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  9.952380952380953
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  9.952380952380953
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  29.85714285714286
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  15
+  29.85714285714286
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  14.85714285714286
+
+14.85714285714286
+
+Linha 15: 5 6 < 1 +  
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "5"  (string representando int)
+  "6"  (string representando int)
+  "<"  (operador relacional menor)
+  "1"  (string representando int)
+  "+"  (operador aritmetico adicao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  5  (valor int)
+  6  (valor int)
+  prec=5  (operador relacional menor)
+  1  (valor int)
+  prec=6  (operador aritmetico adicao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  6
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  True
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+  True
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+2
+
+Linha 16: 5 6 > 1 + 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "5"  (string representando int)
+  "6"  (string representando int)
+  ">"  (operador relacional maior)
+  "1"  (string representando int)
+  "+"  (operador aritmetico adicao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  5  (valor int)
+  6  (valor int)
+  prec=5  (operador relacional maior)
+  1  (valor int)
+  prec=6  (operador aritmetico adicao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  6
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+  False
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+1
+
+Linha 17: 2 5 6 > ** 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "5"  (string representando int)
+  "6"  (string representando int)
+  ">"  (operador relacional maior)
+  "**"  (operador aritmetico exponenciacao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  5  (valor int)
+  6  (valor int)
+  prec=5  (operador relacional maior)
+  prec=8  (operador aritmetico exponenciacao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  6
+  5
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+1
+

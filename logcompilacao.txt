@@ -1,0 +1,2 @@
+gcc -Wall -ansi -O2 -pedantic -Wno-unused-result -c eval.c 
+gcc util.o objetos.o stack.o lexer.o eval.o main.o -o pitao -lm

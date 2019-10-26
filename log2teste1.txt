@@ -1,0 +1,1527 @@
+MAC0121 2019 - EP3
+Pitao (Oct  9 2019, 13:01:53)
+[GCC 6.3.0 20170516] on linux
+Linha 0: # Este e' um comentario.
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 1: # A semantica das operacoes foi copiada do Python (ou pelo menos
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 2: # procurou ser copiada de Python. 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 3: 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 4: #-----------------------------------------------
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 5: # 1. _Alguns_ testes para operadores aritmeticos
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 6: 2.2_       # teste _ , '2.2_' e a maneira de escrever '-2.2'   
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2.2"  (string representando float)
+  "_"  (operador aritmetico "menos unario")
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2.200000  (valor float)
+  prec=8  (operador aritmetico "menos unario")
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2.2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  -2.2
+
+-2.2
+
+Linha 7: 1_         # teste _ , '_' e' menos unario 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "1"  (string representando int)
+  "_"  (operador aritmetico "menos unario")
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  1  (valor int)
+  prec=8  (operador aritmetico "menos unario")
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  -1
+
+-1
+
+Linha 8: 5       _  # teste _ 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "5"  (string representando int)
+  "_"  (operador aritmetico "menos unario")
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  5  (valor int)
+  prec=8  (operador aritmetico "menos unario")
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  -5
+
+-5
+
+Linha 9: 2 2.5   +  # teste +
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "2.5"  (string representando float)
+  "+"  (operador aritmetico adicao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  2.500000  (valor float)
+  prec=6  (operador aritmetico adicao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2.5
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  4.5
+
+4.5
+
+Linha 10: 2 3     -  # teste -
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "3"  (string representando int)
+  "-"  (operador aritmetico subtracao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  3  (valor int)
+  prec=6  (operador aritmetico subtracao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  -1
+
+-1
+
+Linha 11: 2.1 2   *  # teste *
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2.1"  (string representando float)
+  "2"  (string representando int)
+  "*"  (operador aritmetico multiplicacao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2.100000  (valor float)
+  2  (valor int)
+  prec=7  (operador aritmetico multiplicacao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2.1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  2.1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  4.2
+
+4.2
+
+Linha 12: 6.4 .8  /  # teste /
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "6.4"  (string representando float)
+  ".8"  (string representando float)
+  "/"  (operador aritmetico divisao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  6.400000  (valor float)
+  0.800000  (valor float)
+  prec=7  (operador aritmetico divisao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  6.4
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0.8
+  6.4
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  8.0
+
+8.0
+
+Linha 13: 6 4     /  # teste / , a semantica de Python e diferente da do C
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "6"  (string representando int)
+  "4"  (string representando int)
+  "/"  (operador aritmetico divisao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  6  (valor int)
+  4  (valor int)
+  prec=7  (operador aritmetico divisao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  6
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  4
+  6
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1.5
+
+1.5
+
+Linha 14: 2  3   **  # teste **, isso nao existe em C    
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "3"  (string representando int)
+  "**"  (operador aritmetico exponenciacao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  3  (valor int)
+  prec=8  (operador aritmetico exponenciacao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  8
+
+8
+
+Linha 15: 5 2     // # teste //, isto nao existe em C
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "5"  (string representando int)
+  "2"  (string representando int)
+  "//"  (operador aritmetico divisao inteira)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  5  (valor int)
+  2  (valor int)
+  prec=7  (operador aritmetico divisao inteira)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+2
+
+Linha 16: 5 2     %  # teste % , a semantica de Python e diferente da do C
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "5"  (string representando int)
+  "2"  (string representando int)
+  "%"  (operador aritmetico resto de divisao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  5  (valor int)
+  2  (valor int)
+  prec=7  (operador aritmetico resto de divisao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+1
+
+Linha 17: 5.1 2.2 %  # teste % novamente, a semantica de Python e diferente da de C
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "5.1"  (string representando float)
+  "2.2"  (string representando float)
+  "%"  (operador aritmetico resto de divisao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  5.100000  (valor float)
+  2.200000  (valor float)
+  prec=7  (operador aritmetico resto de divisao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5.1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2.2
+  5.1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0.6999999999999993
+
+0.6999999999999993
+
+Linha 18: 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 19: #------------------------------------------------
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 20: # 2. _Alguns_ testes para operadores relacionais
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 21: # A seguir, se as repostas forem 0.0 para False ou 1.0 para True 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 22: # esta perfeito. 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 23: 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 24: 2 2      ==   # teste ==
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "2"  (string representando int)
+  "=="  (operador relacional igual)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  2  (valor int)
+  prec=4  (operador relacional igual)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  True
+
+True
+
+Linha 25: 2 1_     ==   # teste ==, '1_' e a maneira de escrever '-1' 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "1"  (string representando int)
+  "_"  (operador aritmetico "menos unario")
+  "=="  (operador relacional igual)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  1  (valor int)
+  prec=8  (operador aritmetico "menos unario")
+  prec=4  (operador relacional igual)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  -1
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+False
+
+Linha 26: 5 5      !=   # teste !=
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "5"  (string representando int)
+  "5"  (string representando int)
+  "!="  (operador relacional diferente)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  5  (valor int)
+  5  (valor int)
+  prec=4  (operador relacional diferente)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5
+  5
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+False
+
+Linha 27: 2 3      !=   # teste !=      
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "3"  (string representando int)
+  "!="  (operador relacional diferente)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  3  (valor int)
+  prec=4  (operador relacional diferente)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  True
+
+True
+
+Linha 28: 1.2 2    >    # teste >
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "1.2"  (string representando float)
+  "2"  (string representando int)
+  ">"  (operador relacional maior)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  1.200000  (valor float)
+  2  (valor int)
+  prec=5  (operador relacional maior)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1.2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  1.2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+False
+
+Linha 29: 1.1 1    <    # teste <  
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "1.1"  (string representando float)
+  "1"  (string representando int)
+  "<"  (operador relacional menor)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  1.100000  (valor float)
+  1  (valor int)
+  prec=5  (operador relacional menor)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1.1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+  1.1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+False
+
+Linha 30: 2 2      <=   # teste <=
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "2"  (string representando int)
+  "<="  (operador relacional menor ou igual)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  2  (valor int)
+  prec=5  (operador relacional menor ou igual)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  True
+
+True
+
+Linha 31: 2 3      >=   # teste >=
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "3"  (string representando int)
+  ">="  (operador relacional maior ou igual)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  3  (valor int)
+  prec=5  (operador relacional maior ou igual)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+False
+
+Linha 32: 1.2_ 1.2 >=   # teste >= 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "1.2"  (string representando float)
+  "_"  (operador aritmetico "menos unario")
+  "1.2"  (string representando float)
+  ">="  (operador relacional maior ou igual)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  1.200000  (valor float)
+  prec=8  (operador aritmetico "menos unario")
+  1.200000  (valor float)
+  prec=5  (operador relacional maior ou igual)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1.2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  -1.2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1.2
+  -1.2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+False
+
+Linha 33: 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 34: #---------------------------------------------------
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 35: # 3. _Alguns_ testes para para operadores logicos 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 36: # A seguir, se as repostas forem 0.0 para False ou 1.0 para True 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 37: # esta perfeito. 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 38: # Nao e esperado que seu programa imprime True ou False
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 39: 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 40: 3.1    not # teste not, se a resposta for 1.0 esta ok  
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "3.1"  (string representando float)
+  "not"  (operador logico negacao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  3.100000  (valor float)
+  prec=8  (operador logico negacao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3.1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  False
+
+False
+
+Linha 41: 0      not # teste not novamente
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "0"  (string representando int)
+  "not"  (operador logico negacao)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  0  (valor int)
+  prec=8  (operador logico negacao)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  True
+
+True
+
+Linha 42: 1  3   and # teste and, se a resposta for 1.0 esta ok
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "1"  (string representando int)
+  "3"  (string representando int)
+  "and"  (operador logico e)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  1  (valor int)
+  3  (valor int)
+  prec=3  (operador logico e)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+
+3
+
+Linha 43: 2  0   and # teste and, se a resposta for 0.0 esta ok
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "2"  (string representando int)
+  "0"  (string representando int)
+  "and"  (operador logico e)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  2  (valor int)
+  0  (valor int)
+  prec=3  (operador logico e)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0
+  2
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0
+
+0
+
+Linha 44: 1  5.1 and # teste and, se a resposta for 1.0 esta ok
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "1"  (string representando int)
+  "5.1"  (string representando float)
+  "and"  (operador logico e)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  1  (valor int)
+  5.100000  (valor float)
+  prec=3  (operador logico e)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5.1
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  5.1
+
+5.1
+
+Linha 45: 0  3   and # teste and, se a resposta for 0.0 esta ok
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "0"  (string representando int)
+  "3"  (string representando int)
+  "and"  (operador logico e)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  0  (valor int)
+  3  (valor int)
+  prec=3  (operador logico e)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  3
+  0
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0
+
+0
+
+Linha 46: 1  0   or  # teste or , se a resposta for 1.0 esta ok
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "1"  (string representando int)
+  "0"  (string representando int)
+  "or"  (operador logico ou)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  1  (valor int)
+  0  (valor int)
+  prec=2  (operador logico ou)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0
+  1
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+1
+
+Linha 47: 0  1   or  # teste or , se a resposta for 1.0 esta ok
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+  "0"  (string representando int)
+  "1"  (string representando int)
+  "or"  (operador logico ou)
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+  0  (valor int)
+  1  (valor int)
+  prec=2  (operador logico ou)
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  0
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+  0
+
+
+==========================
+  Pilha de execucao
+  valor
+. . . . . . . . . . . . . . .
+  1
+
+1
+
+Linha 48: 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 49: # faltou algo? 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
+Linha 50: 
+
+==========================
+  Fila de itens lexicos  
+  item  (categoria)
+. . . . . . . . . . . . .
+
+
+==========================
+  Fila de valores   
+  valor  (categoria)
+. . . . . . . . . . . . . .
+
+
