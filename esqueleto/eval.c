@@ -162,21 +162,20 @@ static const int precedencia[MAX_OPERADORES] =
 
 void itensParaValores(CelObjeto *iniFilaItens) {
     CelObjeto *aux;
+    char *str;
     for (aux = iniFilaItens->prox; aux != NULL; aux = aux->prox) {
         switch (aux->categoria) {
             case (INT_STR):
-                aux->valor.vFloat = atoi(aux->valor.pStr);
+                str = aux->valor.pStr;
+                aux->valor.vFloat = atoi(str);
                 aux->categoria = FLOAT;
-                if (aux->valor.pStr == NULL) printf("AAAAAAH");
-                /*printf("%s\n", aux->valor.pStr);*/
-                /*free(aux->valor.pStr);*/
+                free(str);
                 break;
             case (FLOAT_STR):
-                aux->valor.vFloat = atof(aux->valor.pStr);
+                str = aux->valor.pStr;
+                aux->valor.vFloat = atof(str);
                 aux->categoria = FLOAT;
-                if (aux->valor.pStr == NULL) printf("AAAAAAH");
-                /*printf("%s\n", aux->valor.pStr);*/
-                /*free(aux->valor.pStr);*/
+                free(str);
                 break;
             case (BOOL_STR):
                 if (strncmp("True", aux->valor.pStr, strlen("True")))
