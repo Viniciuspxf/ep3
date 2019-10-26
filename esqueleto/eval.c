@@ -255,6 +255,10 @@ CelObjeto * eval (CelObjeto *iniPosfixa, Bool mostrePilhaExecucao) {
                 if (operandoA >= operandoB) entrada.valor.vFloat = 1;
                 else entrada.valor.vFloat = 0;
                 break;
+            case (OPER_MENOR_IGUAL):
+                if (operandoA <= operandoB) entrada.valor.vFloat = 1;
+                else entrada.valor.vFloat = 0;
+                break;
             case (OPER_EXPONENCIACAO):
                 entrada.valor.vFloat = pow(operandoA, operandoB);
                 break;

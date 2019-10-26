@@ -178,7 +178,7 @@ void freeListaObjetos(CelObjeto *iniLista) {
  */
 
 void mostreValor(CelObjeto *pValor) {
-    printf("  %.6lf", pValor->valor.vFloat);
+    printf("  %.6f", pValor->valor.vFloat);
 }
 
 /*-------------------------------------------------------------

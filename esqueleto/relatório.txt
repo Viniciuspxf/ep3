@@ -1,9 +1,13 @@
 Coisas que faltam ver:
 
-free em função itens para valores
->> na saída stderr
-erros que acontecem no make e número de casas da saída da pilha
-resto da divisão não está funcionando
+
+erros que acontecem no make (coisas não usadas, )
+saída diferente em relação a pular uma linha
+
+
+testar resto da divisão
+testar outras entradas
+testar memórias alocadas vs memórias com free
 
 ou não está funcionando (ver operadores lógicos) (certo)
 resultado de operações lógicas para valores float (certo)
